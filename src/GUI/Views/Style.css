@@ -1,0 +1,17 @@
+.anchorpane{
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    -fx-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.2);
+    -fx-background-color: #222831;
+    color: #ffffff;
+    height: 400px;
+}
+
+.weatherBox{
+    -fx-background-color: beige;
+}
+
+
+
+
