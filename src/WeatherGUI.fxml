@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="350.0" prefWidth="262.0" styleClass="anchorpane" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WeatherController">
+   <children>
+      <TextField fx:id="searchbar" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: white;" />
+      <ImageView fx:id="weatherimage" fitHeight="134.0" fitWidth="180.0" layoutX="55.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="degreeslbl" alignment="CENTER" layoutX="78.0" layoutY="184.0" prefHeight="44.0" prefWidth="107.0" text="23°" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="20.0" layoutY="300.0" prefHeight="37.0" prefWidth="25.0" style="-fx-background-color: white;" />
+      <AnchorPane layoutX="146.0" layoutY="302.0" prefHeight="32.0" prefWidth="37.0" style="-fx-background-color: white;">
+         <children>
+            <ImageView fx:id="windimage" fitHeight="27.0" fitWidth="37.0" layoutX="3.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@GUI/Images/windspeed.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="conditionlbl" alignment="CENTER" layoutX="87.0" layoutY="237.0" prefHeight="19.0" prefWidth="81.0" text="Cloudy" textFill="WHITE">
+         <font>
+            <Font name="Futura Medium" size="14.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="humiimage" fitHeight="33.0" fitWidth="37.0" layoutX="14.0" layoutY="302.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@GUI/Images/humidity.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="61.0" layoutY="292.0" text="Humidity" textFill="WHITE">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font></Label>
+      <Label layoutX="200.0" layoutY="294.0" style="-fx-font-family: Futura;" text="Wind" textFill="WHITE" />
+      <Label fx:id="humdata" layoutX="61.0" layoutY="313.0" style="-fx-font-family: Futura;" text="70%" textFill="WHITE" />
+      <Label fx:id="winddata" layoutX="200.0" layoutY="315.0" style="-fx-font-family: Futura;" text="31 km/h" textFill="WHITE" />
+      <Label fx:id="citylbl" layoutX="101.0" layoutY="60.0" text="Esbjerg" textFill="WHITE">
+         <font>
+            <Font name="Futura Medium" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="202.0" layoutY="15.0" mnemonicParsing="false" onAction="#searchclick" style="-fx-background-color: white;" stylesheets="@Style.css" text="Search">
+         <font>
+            <Font name="Futura Medium" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
