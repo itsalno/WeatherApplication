@@ -11,8 +11,8 @@
 <AnchorPane prefHeight="350.0" prefWidth="262.0" styleClass="anchorpane" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WeatherController">
    <children>
       <TextField fx:id="searchbar" layoutX="14.0" layoutY="14.0" prefHeight="27.0" prefWidth="180.0" style="-fx-background-color: white;" />
-      <ImageView fx:id="weatherimage" fitHeight="134.0" fitWidth="180.0" layoutX="55.0" layoutY="72.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="degreeslbl" alignment="CENTER" layoutX="78.0" layoutY="184.0" prefHeight="44.0" prefWidth="107.0" text="23°" textFill="WHITE">
+      <ImageView fx:id="weatherimage" fitHeight="126.0" fitWidth="123.0" layoutX="68.0" layoutY="89.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="135.0" AnchorPane.leftAnchor="68.0" AnchorPane.rightAnchor="71.0" />
+      <Label fx:id="degreeslbl" alignment="CENTER" layoutX="78.0" layoutY="210.0" prefHeight="44.0" prefWidth="107.0" text="23°" textFill="WHITE">
          <font>
             <Font size="36.0" />
          </font>
@@ -27,7 +27,7 @@
             </ImageView>
          </children>
       </AnchorPane>
-      <Label fx:id="conditionlbl" alignment="CENTER" layoutX="87.0" layoutY="237.0" prefHeight="19.0" prefWidth="81.0" text="Cloudy" textFill="WHITE">
+      <Label fx:id="conditionlbl" alignment="CENTER" layoutX="87.0" layoutY="254.0" prefHeight="19.0" prefWidth="81.0" text="Cloudy" textFill="WHITE">
          <font>
             <Font name="Futura Medium" size="14.0" />
          </font>
@@ -37,14 +37,14 @@
             <Image url="@GUI/Images/humidity.png" />
          </image>
       </ImageView>
-      <Label layoutX="61.0" layoutY="292.0" text="Humidity" textFill="WHITE">
+      <Label layoutX="61.0" layoutY="292.0" prefHeight="18.0" prefWidth="58.0" text="Humidity" textFill="WHITE">
          <font>
             <Font name="Futura Medium" size="13.0" />
          </font></Label>
-      <Label layoutX="200.0" layoutY="294.0" style="-fx-font-family: Futura;" text="Wind" textFill="WHITE" />
-      <Label fx:id="humdata" layoutX="61.0" layoutY="313.0" style="-fx-font-family: Futura;" text="70%" textFill="WHITE" />
+      <Label layoutX="200.0" layoutY="294.0" prefHeight="18.0" prefWidth="43.0" style="-fx-font-family: Futura;" text="Wind" textFill="WHITE" />
+      <Label fx:id="humdata" layoutX="61.0" layoutY="313.0" prefHeight="18.0" prefWidth="37.0" style="-fx-font-family: Futura;" text="70%" textFill="WHITE" />
       <Label fx:id="winddata" layoutX="200.0" layoutY="315.0" style="-fx-font-family: Futura;" text="31 km/h" textFill="WHITE" />
-      <Label fx:id="citylbl" layoutX="101.0" layoutY="60.0" text="Esbjerg" textFill="WHITE">
+      <Label fx:id="citylbl" alignment="CENTER" layoutX="17.0" layoutY="65.0" prefHeight="24.0" prefWidth="228.0" text="Esbjerg" textFill="WHITE">
          <font>
             <Font name="Futura Medium" size="18.0" />
          </font>
